@@ -1,7 +1,8 @@
-cmake_minimum_required(VERSION 3.27.6)
+cmake_minimum_required(VERSION 3.2...3.27.5)
+set(CMAKE_CXX_STANDARD 17)
 
-project()
+project(Multifile)
 
-add_subdirectory(bubble_sort)
+add_subdirectory(bubble_sort_mf)
 
-set(CMAKE_SUPRESS_REGENARATION true)
+set(CMAKE_SUPPRESS_REGENERATION true)

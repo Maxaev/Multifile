@@ -1,23 +1,23 @@
-@echo off
+stty -echo
 
-:: Вид сборки / суффикс в названии каталога сборки
-::
-:: "Ninja" / "ninja"
-:: "Visual Studio 17 2022" / "visual_studio"
-::
-set BUILD_TYPE=Ninja
-set BUILD_SUFFIX=ninja
+# Вид сборки / суффикс в названии каталога сборки
+#
+# "Ninja" / "ninja"
+# "Visual Studio 17 2022" / "visual_studio"
+#
+BUILD_TYPE=Ninja
+BUILD_SUFFIX=ninja
 
-chcp 65001
+BUILD_FOLDER=build_$BUILD_SUFFIX
+SOURCE_FOLDER=projects
 
-set BUILD_FOLDER=build_%BUILD_SUFFIX%
-set SOURCE_FOLDER=projects
+if [ ! -d $BUILD_FOLDER ]; then
+    mkdir $BUILD_FOLDER
+fi
+cd $BUILD_FOLDER
 
-if not exist %BUILD_FOLDER% mkdir %BUILD_FOLDER%
-
-cd %BUILD_FOLDER%
-
-cmake -G %BUILD_TYPE% ..\%SOURCE_FOLDER%
+cmake -G $BUILD_TYPE ../$SOURCE_FOLDER
 cmake --build .
 
-copy ..\%SOURCE_FOLDER%\bubble_sort\run_bubble_sort.bat .\bubble_sort
+cp ../$SOURCE_FOLDER/bubble_sort/run_bubble_sort.sh ./bubble_sort
+cp ../$SOURCE_FOLDER/bubble_sort_mf/run_bubble_sort_mf.sh ./bubble_sort_mf
