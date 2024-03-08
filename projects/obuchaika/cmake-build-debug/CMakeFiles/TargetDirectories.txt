@@ -1,0 +1,3 @@
+/Users/roman/Desktop/Multifile/projects/obuchaika/cmake-build-debug/CMakeFiles/obuchaika.dir
+/Users/roman/Desktop/Multifile/projects/obuchaika/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/roman/Desktop/Multifile/projects/obuchaika/cmake-build-debug/CMakeFiles/rebuild_cache.dir

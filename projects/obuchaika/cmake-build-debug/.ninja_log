@@ -1,0 +1,5 @@
+# ninja log v5
+1	192	1709509809211076870	CMakeFiles/obuchaika.dir/menu_items.cpp.o	3d7180b7ac63e5b3
+0	421	1709509809439877019	CMakeFiles/obuchaika.dir/main.cpp.o	ff688fe2c99b5fb6
+0	427	1709509809446397436	CMakeFiles/obuchaika.dir/menu_functions.cpp.o	924a010f596a89d7
+427	578	1709509809595712285	obuchaika	a6ad7ab3510bfaea

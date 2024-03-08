@@ -14,10 +14,16 @@ SOURCE_FOLDER=projects
 if [ ! -d $BUILD_FOLDER ]; then
     mkdir $BUILD_FOLDER
 fi
-cd $BUILD_FOLDER
+cd $BUILD_FOLDER || exit
 
 cmake -G $BUILD_TYPE ../$SOURCE_FOLDER
 cmake --build .
+arr=("refactoring_and_print" "base_theory_p1" "base_theory_tasks_p1" "obuchaika")
 
-cp ../$SOURCE_FOLDER/bubble_sort/run_bubble_sort.sh ./bubble_sort
-cp ../$SOURCE_FOLDER/bubble_sort_mf/run_bubble_sort_mf.sh ./bubble_sort_mf
+files=("run_refactoring_and_print.sh" "run_base_theory_p1.sh" "run_base_theory_tasks_p1.sh" "run_obuchaika.sh")
+
+for i in {0..3}; do
+     cp "../$SOURCE_FOLDER/${arr[$i]}/${files[$i]}" "./${arr[$i]}"
+done
+
+cp "../run_tests.sh" . 
