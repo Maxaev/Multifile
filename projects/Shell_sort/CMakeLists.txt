@@ -1,8 +1,8 @@
-cmake_minimum_requied(Version 3.26)
+cmake_minimum_required(Version 3.26)
 
-project(Shel_sort)
+project(Shell_sort)
 
 set (CMAKE_CXX_STANDARD 17)
-add_executable(Shel_sort main.cpp
-	shel_sort.cpp
-	shel_sort.hpp)
+add_executable(Shell_sort main.cpp
+	shell_sort.cpp
+	shell_sort.hpp)

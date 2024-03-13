@@ -1,4 +1,4 @@
-#include "shel_sort.hpp"
+#include "shell_sort.hpp"
 
 int main(){
 	int n;

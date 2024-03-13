@@ -1,4 +1,4 @@
-#include "shel_sort.hpp"
+#include "shell_sort.hpp"
 void ShellSort(int n,std::vector<int> &a)
 {
 	int i,j,step;
