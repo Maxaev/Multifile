@@ -1,5 +1,4 @@
 project(obuchaika)
-set(CMAKE_CXX_STANDARD 17)
 
 set(HEADERS 
 	menu.hpp

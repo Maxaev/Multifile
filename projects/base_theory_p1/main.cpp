@@ -73,7 +73,7 @@ int main() {
         std::cout << std::endl;
 
         std::cout << "Вспоминаем что такое постфиксный инкремент" << std::endl;
-        std::cout << "*ptr_arr++ = " << *ptr_arr++ << std::endl;
+        std::cout << "*ptr_arr++ = " << *ptr_arr++ << std::endl; 
         std::cout << "++*ptr_arr = " << ++*ptr_arr << std::endl;
         std::cout << "*++ptr_arr = " << *++ptr_arr << std::endl;
            
@@ -154,4 +154,3 @@ int main() {
 void func(char msg[], const char const_msg[], const char* const super_const_msg) {
 
 }
-

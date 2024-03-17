@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.2...3.27.5)
-set(CMAKE_CXX_STANDARD 17)
 
-project(Multifile)
+project(study)
 
 enable_testing()
 add_subdirectory(lib/googletest)
@@ -14,5 +13,6 @@ add_subdirectory(obuchaika)
 add_subdirectory(unit_test_example)
 add_subdirectory(Shell_sort)
 add_subdirectory(unit_test_shell)
+
 
 set(CMAKE_SUPPRESS_REGENERATION true)

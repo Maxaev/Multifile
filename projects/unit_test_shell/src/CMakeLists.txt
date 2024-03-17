@@ -5,6 +5,6 @@ target_sources(Shell_test_lib
 		shel_sort.hpp
 )
 
-target_include_directories(Shell_test PUB:IC
+target_include_directories(Shell_test_lib PUBLIC
 	"${PROJECT_SOURCE_DIR}/src"
 )

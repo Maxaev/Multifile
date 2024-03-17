@@ -1,7 +1,6 @@
 #include "shel_sort.hpp"
-void ShellSort(std::vector<int> &a)
+void ShellSort(int n, std::vector<int> &a)
 {
-    int n = a.size();
     int i, j, step;
     int tmp;
     for (step = n / 2; step > 0; step /= 2)

@@ -1,11 +1,11 @@
-set(CMAKE_CXX_STANDARD 17)
-set(SOURCES
+set(SOURCES 
 	test_bubble.cpp
 )
+
 add_executable(test_bubble ${SOURCES})
-target_link_libraries(test_bubble
-	qtest_main
-	qmock_main
+target_link_libraries(test_bubble 
+	gtest_main 
+	gmock_main 
 	bubble_sort_lib
 )
 

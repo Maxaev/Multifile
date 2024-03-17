@@ -43,4 +43,3 @@ void print_array(const char* const comment, const int* const arr, const int n) {
     }
     std::cout << std::endl;
 }
-

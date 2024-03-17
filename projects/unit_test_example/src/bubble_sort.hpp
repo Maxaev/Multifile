@@ -4,6 +4,7 @@
 #include <vector>
 
 namespace BubbleSort {
-	void sort(std::vector<int> &arr);
+    void sort(std::vector<int> &arr);
 }
+
 #endif
